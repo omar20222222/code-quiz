@@ -1,5 +1,5 @@
 root {
-  --background:lightblue;
+  --background: lightblue;
   --hover: white;
 }
 
@@ -15,7 +15,7 @@ body {
 
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
   font-size: 20px;
@@ -157,7 +157,7 @@ root {
 
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  background-color: white;
+  background-color: lightskyblue;
   text-align: center;
 }
 
