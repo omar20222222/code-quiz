@@ -1,5 +1,3 @@
-
-
 const questions = [
   {
     title: "What does CSS stand for?",
@@ -47,7 +45,6 @@ const constructOptions = function (options) {
   optionsContainer.setAttribute("class", "options-container");
 
   for (let i = 0; i < options.length; i++) {
-    // get the current option from array
     const option = options[i];
 
     // create my button
@@ -57,7 +54,6 @@ const constructOptions = function (options) {
     optionButton.setAttribute("data-option", option);
     optionButton.textContent = option;
 
-    // append to optionsContainer
     optionsContainer.appendChild(optionButton);
   }
 
@@ -96,13 +92,11 @@ const storeScore = function () {
     initials: initials,
   };
 
-  // get from LS before inserting object
   const highscores = getFromLocalStorage("highscores", []);
 
   // insert the score object
   highscores.push(scoreObject);
 
-  // write back to LS
   localStorage.setItem("highscores", JSON.stringify(highscores));
 };
 
@@ -173,7 +167,6 @@ const renderDangerAlert = function () {
   // append the alert to the document
   document.getElementById("alert-container").appendChild(alert);
 
-  // declare a timeout function (to remove the element)
   const afterWait = function () {
     // remove alert
     alert.remove();
